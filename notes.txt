@@ -1,0 +1,11 @@
+# This builds a website in the docs directory 
+# (last part of command line) using docs as
+# the root directory (instead of website), so
+# Jekyll and GitHub can use it. 
+# The -root docs option indicates the place
+# to look for the root index.md file is not
+# the current directory (website) but is in
+# the ./docs directory, which Jekyll expects it.
+# The -webroot docs/WWW option indicates the
+# output website goes in that directory.
+$ poco -root docs -webroot docs/WWW docs
