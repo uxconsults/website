@@ -330,6 +330,123 @@ h4{color:var(--h4-fg);}
 
 
 
+/* uxconsults.css*/
+
+/* OVERRIDE FRAMEWORK SIZES */
+
+/* OVERRIDE FRAMEWORK LAYOUT */
+
+/* --------------------------------------------------
+ * Special feature: h5 and h6 are used as 2 sides of 
+ * a simulated text conversation using speech bubbles. 
+ * h5 (message sender) is on the left and 
+ * h6 (message receiver) is on the right. 
+ * --------------------------------------------------
+ */
+article>h5 {
+    /* White text on blue background */
+    color: white;
+    background: #428AF6;
+
+    position: relative;
+    margin:0;
+    height:auto;
+    line-height: 1.2rem;
+    padding:.5rem 1rem .5rem 1rem;
+    max-width: 40rem;
+    min-width: 10rem;
+    border-radius: .5rem;
+
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+article>h5:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    top: 50%; /* Vertical placement of bubble tail */
+    margin-top: -1rem; /* Push bubble tail down this far */
+    border-width: 0 0 1.5rem 1.5rem;
+    border-color: transparent transparent #428AF6 transparent;
+    left: -1rem;
+}
+
+article>h6 {
+    /* Black text on off-white background */
+    color: #000000;
+    background: #f5eded;
+
+    position: relative;
+    margin: 1rem 2rem 1rem 5rem;
+    height:auto;
+    line-height: 1.2rem;
+    padding:.5rem 1rem .5rem 1rem;
+    max-width: 40rem;
+    min-width: 10rem;
+    border-radius: .5rem;
+
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+article>h6:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    top: 50%; /* Placement of bubble tail */
+    margin-top: -1rem;
+    border-width: 1.5rem 0 0 1.5rem;
+    border-width: 0 1.5rem 1.5rem 0;
+    border-color: transparent transparent #f5eded transparent;
+    right: -1rem;
+}
+
+
+
+
+/* OVERRIDE FRAMEWORK TYPOGRAPHY AND FONTS */
+
+article>h1 {
+  font-size:3rem;
+  font-weight:900;
+  letter-spacing:-.1rem; 
+  line-height:3rem;
+  margin-bottom:2rem;
+}
+
+article>h2 {
+  font-size:2.5rem;
+  font-weight:700;
+  letter-spacing:-.1rem; 
+  line-height:2.5rem;
+  margin-bottom:1.5rem;
+}
+
+article > p {
+  margin-bottom:1.5rem;
+}
+
+/* OVERRIDE MEDIA QUERIES. COLORS FOR LIGHT & DARK THEMES */
+@media (prefers-color-scheme:light) {
+:root {
+}
+}
+
+@media (prefers-color-scheme:dark) {
+:root {
+}
+}
+
+
+
+
 /* pocodocs.css*/
 /* --------------------------------------------------
  * Aside unordered lists are used for table of 
@@ -413,70 +530,6 @@ article>p,article>ul,article>ul>li,article>pre{
   width:var(--article-width);
 }
 
-/* h5 and h6 are used as 2 sides of a simulated
-   text conversation using speech bubbles. h5 is on the
-   left and h6 is on the right. */
-article>h5 {
-    position: relative;
-    margin:0;
-    height:auto;
-    line-height: 1.2rem;
-    padding:.5rem 1rem .5rem 1rem;
-    min-width: 10rem;
-    border-radius: .5rem;
-
-    /* White text on blue background */
-    color: white;
-    background: #428AF6;
-    font-family: Arial;
-    font-size: 1rem;
-}
-article>h5:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    top: 50%; /* Vertical placement of bubble tail */
-    margin-top: -1rem; /* Push bubble tail down this far */
-    border-width: 0 0 1.5rem 1.5rem;
-    border-color: transparent transparent #428AF6 transparent;
-    left: -1rem;
-}
-
-article>h6 {
-    position: relative;
-    margin: 1rem 2rem 1rem 5rem;
-    height:auto;
-    line-height: 1.2rem;
-    padding:.5rem 1rem .5rem 1rem;
-    min-width: 10rem;
-    border-radius: .5rem;
-
-    /* Black text on off-white background */
-    color: #000000;
-    background: #f5eded;
-
-    font-family: Arial;
-    font-size: 1rem;
-}
-article>h6:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    top: 50%; /* Placement of bubble tail */
-    border-width: 1.5rem 0 0 1.5rem;
-    border-width: 0 1.5rem 1.5rem 0;
-    border-color: transparent transparent #f5eded transparent;
-    right: -1rem;
-    margin-top: -1rem;
-}
-
-
 
 /* OVERRIDE FRAMEWORK COLORS */
 article>h2{color:var(--article-h2-fg);}
@@ -529,8 +582,12 @@ header>ul>li:first-child>a>del{text-decoration:none;color:red;}
 	
 	
 <article id="article-poco">
-<h1 id="text-and-web-marketing-for-your-small-business">Text and web marketing for your small business</h1>
-<p>You need to reactivate customers but don't have the time. You don't want to cold call either. And you don't want them <em>being</em> cold-called. Now what?</p>
+<h1 id="hands-free-text-marketing-for-your-business">Hands-free text marketing for your business</h1>
+<p>You have a customer list with phone numbers. It's time to reactivate customers but you don't have the time. You don't want to cold call either. And you don't want them <em>being</em> cold-called. Now what?</p>
+<h2 id="let-our-ai-pull-business-out-of-thin-air-for-you">Let our AI pull business out of thin air for you.</h2>
+<p>If your admin staff has the time, you can leave us out of the equation. Just have them
+text your customers with sequences like the one below. But if they don't have the time to
+call 100 customers a day, maybe UxConsults is the way to go.</p>
 <h5 id="hey-this-is-selena-at-the-dentist-ready-for-your-annual-checkup">Hey, this is Selena at the dentist. Ready for your annual checkup?</h5>
 <h6 id="yes-i-guess-so">yes, i guess so</h6>
 <h5 id="would-you-like-us-to-call-you-and-set-up-an-appointment-no-pressure">Would you like us to call you and set up an appointment? No pressure!</h5>
@@ -541,9 +598,7 @@ sign-up terms. Just sit back and see if we can make you money.</p>
 
 </article>
 
-<footer id="footer-poco"><ul>
-<li>Copyright 2022 by Tom Campbell (425) 260-5292 <a href="mailto:uxconsults@gmail.com">uxconsults@gmail.com</a></li>
-</ul>
+<footer id="footer-poco"><p>Copyright 2022 by Tom Campbell (425) 260-5292 <a href="mailto:uxconsults@gmail.com">uxconsults@gmail.com</a></p>
 </footer>
 <script> {
   // Search for "USER JAVASCRIPT CODE" to see where user Javascript should go.

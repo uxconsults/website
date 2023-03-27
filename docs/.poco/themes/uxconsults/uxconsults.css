@@ -3,7 +3,102 @@
 
 /* OVERRIDE FRAMEWORK LAYOUT */
 
+/* --------------------------------------------------
+ * Special feature: h5 and h6 are used as 2 sides of 
+ * a simulated text conversation using speech bubbles. 
+ * h5 (message sender) is on the left and 
+ * h6 (message receiver) is on the right. 
+ * --------------------------------------------------
+ */
+article>h5 {
+    /* White text on blue background */
+    color: white;
+    background: #428AF6;
+
+    position: relative;
+    margin:0;
+    height:auto;
+    line-height: 1.2rem;
+    padding:.5rem 1rem .5rem 1rem;
+    max-width: 40rem;
+    min-width: 10rem;
+    border-radius: .5rem;
+
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+article>h5:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    top: 50%; /* Vertical placement of bubble tail */
+    margin-top: -1rem; /* Push bubble tail down this far */
+    border-width: 0 0 1.5rem 1.5rem;
+    border-color: transparent transparent #428AF6 transparent;
+    left: -1rem;
+}
+
+article>h6 {
+    /* Black text on off-white background */
+    color: #000000;
+    background: #f5eded;
+
+    position: relative;
+    margin: 1rem 2rem 1rem 5rem;
+    height:auto;
+    line-height: 1.2rem;
+    padding:.5rem 1rem .5rem 1rem;
+    max-width: 40rem;
+    min-width: 10rem;
+    border-radius: .5rem;
+
+    font-family: Arial;
+    font-size: 1rem;
+}
+
+article>h6:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    top: 50%; /* Placement of bubble tail */
+    margin-top: -1rem;
+    border-width: 1.5rem 0 0 1.5rem;
+    border-width: 0 1.5rem 1.5rem 0;
+    border-color: transparent transparent #f5eded transparent;
+    right: -1rem;
+}
+
+
+
+
 /* OVERRIDE FRAMEWORK TYPOGRAPHY AND FONTS */
+
+article>h1 {
+  font-size:3rem;
+  font-weight:900;
+  letter-spacing:-.1rem; 
+  line-height:3rem;
+  margin-bottom:2rem;
+}
+
+article>h2 {
+  font-size:2.5rem;
+  font-weight:700;
+  letter-spacing:-.1rem; 
+  line-height:2.5rem;
+  margin-bottom:1.5rem;
+}
+
+article > p {
+  margin-bottom:1.5rem;
+}
 
 /* OVERRIDE MEDIA QUERIES. COLORS FOR LIGHT & DARK THEMES */
 @media (prefers-color-scheme:light) {
