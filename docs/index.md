@@ -23,10 +23,12 @@ call 100 customers a day, maybe UxConsults is the way to go.
 
 ###### sounds good
 
-## You let us contact them via text (over a 60% return rate on average).
+## Our AI will contact them via text. Aver return call rate: 60%
 
-And the first trial is free. No credit cards, no contract, no tricky
+And **the first trial is free**. No credit cards, no contract, no tricky
 sign-up terms. Just sit back and see if we can make you money.
 
-
-
+## Wait I have more questions
+Sounds good! You can call us at [(425) 260-5292](tel:425-260-5292), 
+email us at  [uxconsults@gmail.com](mailto:uxconsults@gmail.com), or
+visit our [FAQ](faq.html)
