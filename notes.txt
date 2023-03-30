@@ -1,7 +1,7 @@
 # Notes on the UxConsult site
 
 * It lives in the repo https://github.com/uxconsult/website
-* The home page and site hoome are in https://github.com/uxconsult/website/docs/
+* The home page and all site pages are in https://github.com/uxconsult/website/docs/
 for conformance with GitHub pages.
 * The home page is in  https://github.com/uxconsult/website/docs/README.md for GitHub Pages
 
